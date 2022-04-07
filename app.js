@@ -19,6 +19,9 @@ Vue.createApp({
     methods: {
         addCourse() {
             this.courses.push(this.courseContent)
+        },
+        removeCourse(i){
+            this.courses.splice(i,1)
         }
     }
 }).mount("#app")
